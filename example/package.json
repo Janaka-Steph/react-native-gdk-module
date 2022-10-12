@@ -1,6 +1,6 @@
 {
-  "name": "react-native-gdk-module-turbocompat-example",
-  "description": "Example app for react-native-gdk-module-turbocompat",
+  "name": "react-native-gdk-module-example",
+  "description": "Example app for react-native-gdk-module",
   "version": "0.0.1",
   "private": true,
   "scripts": {

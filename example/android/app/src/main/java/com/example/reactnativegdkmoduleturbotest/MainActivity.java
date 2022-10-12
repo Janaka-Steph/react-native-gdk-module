@@ -1,4 +1,4 @@
-package com.example.reactnativegdkmoduleturbocompat;
+package com.example.reactnativegdkmodule;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

@@ -1,7 +1,7 @@
 import { NativeModules, Platform } from 'react-native';
 
 const LINKING_ERROR =
-  `The package 'react-native-gdk-module-turbocompat' doesn't seem to be linked. Make sure: \n\n` +
+  `The package 'react-native-gdk-module' doesn't seem to be linked. Make sure: \n\n` +
   Platform.select({ ios: "- You have run 'pod install'\n", default: '' }) +
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo managed workflow\n';
@@ -9,12 +9,12 @@ const LINKING_ERROR =
 // @ts-expect-error
 const isTurboModuleEnabled = global.__turboModuleProxy != null;
 
-const GdkModuleTurbocompatModule = isTurboModuleEnabled
-  ? require('./NativeGdkModuleTurbocompat').default
-  : NativeModules.GdkModuleTurbocompat;
+const GdkModuleModule = isTurboModuleEnabled
+  ? require('./NativeGdkModule').default
+  : NativeModules.GdkModule;
 
-const GdkModuleTurbocompat = GdkModuleTurbocompatModule
-  ? GdkModuleTurbocompatModule
+const GdkModule = GdkModuleModule
+  ? GdkModuleModule
   : new Proxy(
       {},
       {
@@ -24,6 +24,6 @@ const GdkModuleTurbocompat = GdkModuleTurbocompatModule
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return GdkModuleTurbocompat.multiply(a, b);
+export function generateMnemonic12(): Promise<string> {
+  return GdkModule.generateMnemonic12();
 }

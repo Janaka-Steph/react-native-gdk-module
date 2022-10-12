@@ -6,7 +6,7 @@ install! 'cocoapods', :deterministic_uuids => false
 
 ENV['RCT_NEW_ARCH_ENABLED'] = '1'
 
-target 'GdkModuleTurbocompatExample' do
+target 'GdkModuleExample' do
   config = use_native_modules!
 
   # Flags change depending on the env values.

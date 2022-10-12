@@ -1,4 +1,4 @@
-package com.example.reactnativegdkmoduleturbocompat.newarchitecture;
+package com.example.reactnativegdkmodule.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.EmptyReactNativeConfig;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.example.reactnativegdkmoduleturbocompat.BuildConfig;
-import com.example.reactnativegdkmoduleturbocompat.newarchitecture.components.MainComponentsRegistry;
-import com.example.reactnativegdkmoduleturbocompat.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.example.reactnativegdkmodule.BuildConfig;
+import com.example.reactnativegdkmodule.newarchitecture.components.MainComponentsRegistry;
+import com.example.reactnativegdkmodule.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

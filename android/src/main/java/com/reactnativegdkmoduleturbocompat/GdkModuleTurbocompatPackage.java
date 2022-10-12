@@ -1,4 +1,4 @@
-package com.reactnativegdkmoduleturbocompat;
+package com.reactnativegdkmodule;
 
 import androidx.annotation.Nullable;
 import com.facebook.react.bridge.NativeModule;
@@ -10,13 +10,13 @@ import com.facebook.react.TurboReactPackage;
 import java.util.HashMap;
 import java.util.Map;
 
-public class GdkModuleTurbocompatPackage extends TurboReactPackage {
+public class GdkModulePackage extends TurboReactPackage {
 
   @Nullable
   @Override
   public NativeModule getModule(String name, ReactApplicationContext reactContext) {
-    if (name.equals(GdkModuleTurbocompatModule.NAME)) {
-        return new GdkModuleTurbocompatModule(reactContext);
+    if (name.equals(GdkModuleModule.NAME)) {
+        return new GdkModuleModule(reactContext);
     } else {
         return null;
     }
@@ -28,10 +28,10 @@ public class GdkModuleTurbocompatPackage extends TurboReactPackage {
       final Map<String, ReactModuleInfo> moduleInfos = new HashMap<>();
       boolean isTurboModule = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED;
       moduleInfos.put(
-              GdkModuleTurbocompatModule.NAME,
+              GdkModuleModule.NAME,
               new ReactModuleInfo(
-                      GdkModuleTurbocompatModule.NAME,
-                      GdkModuleTurbocompatModule.NAME,
+                      GdkModuleModule.NAME,
+                      GdkModuleModule.NAME,
                       false, // canOverrideExistingModule
                       false, // needsEagerInit
                       true, // hasConstants

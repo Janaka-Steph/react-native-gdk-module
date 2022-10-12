@@ -1,5 +1,5 @@
 {
-  "name": "react-native-gdk-module-turbocompat",
+  "name": "react-native-gdk-module",
   "version": "0.1.0",
   "description": "test",
   "main": "lib/commonjs/index",
@@ -13,7 +13,7 @@
     "android",
     "ios",
     "cpp",
-    "react-native-gdk-module-turbocompat.podspec",
+    "react-native-gdk-module.podspec",
     "!lib/typescript/example",
     "!android/build",
     "!ios/build",
@@ -35,13 +35,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/Janaka-Steph/react-native-gdk-module-turbocompat",
+  "repository": "https://github.com/Janaka-Steph/react-native-gdk-module",
   "author": "Janaka-Steph <rochestephane@yahoo.fr> (https://github.com/Janaka-Steph)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Janaka-Steph/react-native-gdk-module-turbocompat/issues"
+    "url": "https://github.com/Janaka-Steph/react-native-gdk-module/issues"
   },
-  "homepage": "https://github.com/Janaka-Steph/react-native-gdk-module-turbocompat#readme",
+  "homepage": "https://github.com/Janaka-Steph/react-native-gdk-module#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -151,7 +151,7 @@
   "codegenConfig": {
     "libraries": [
       {
-        "name": "RNGdkModuleTurbocompatSpec",
+        "name": "RNGdkModuleSpec",
         "type": "modules",
         "jsSrcsDir": "src"
       }

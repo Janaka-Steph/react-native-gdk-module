@@ -1,7 +1,7 @@
 #include "MainApplicationModuleProvider.h"
 
 #include <rncore.h>
-#include <GdkModuleTurbocompat.h>
+#include <GdkModule.h>
 
 namespace facebook {
 namespace react {
@@ -19,7 +19,7 @@ std::shared_ptr<TurboModule> MainApplicationModuleProvider(
   // }
   // return rncore_ModuleProvider(moduleName, params);
 
-  auto module = GdkModuleTurbocompat_ModuleProvider(moduleName, params);
+  auto module = GdkModule_ModuleProvider(moduleName, params);
 
   if (module != nullptr) {
     return module;

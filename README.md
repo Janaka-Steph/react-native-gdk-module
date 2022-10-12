@@ -1,15 +1,15 @@
-# react-native-gdk-module-turbocompat
+# react-native-gdk-module
 turbo compat
 ## Installation
 
 ```sh
-npm install react-native-gdk-module-turbocompat
+npm install react-native-gdk-module
 ```
 
 ## Usage
 
 ```js
-import { multiply } from "react-native-gdk-module-turbocompat";
+import { multiply } from "react-native-gdk-module";
 
 // ...
 

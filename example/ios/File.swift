@@ -1,6 +1,6 @@
 //
 //  File.swift
-//  GdkModuleTurbocompatExample
+//  GdkModuleExample
 //
 
 import Foundation
